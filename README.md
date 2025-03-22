@@ -1,1 +1,1 @@
-# auto-blogger-api
+# Auto Blogger API
