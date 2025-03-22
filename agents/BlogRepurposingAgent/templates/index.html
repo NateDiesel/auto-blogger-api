@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Repurposing Agent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+        form {
+            margin-top: 20px;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Blog Repurposing Agent</h1>
+        <p>Use this tool to transform your blog content into social media posts for Instagram, Facebook, and TikTok.</p>
+
+        <form action="/generate" method="post">
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="content">Blog Content:</label>
+            <textarea id="content" name="content" rows="5" required></textarea>
+
+            <label for="url">Blog URL:</label>
+            <input type="url" id="url" name="url" required>
+
+            <button type="submit">Repurpose Blog</button>
+        </form>
+    </div>
+
+</body>
+</html>
